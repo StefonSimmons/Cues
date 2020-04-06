@@ -9,7 +9,7 @@ NYC Film TV and Theater Activity App
 
 This web application utilizes a NYC OpenData Dataset for Film Permits via the Socrata Open Data API (SODA).
 
-JSON Data Snippet: [I'm an inline-style link] (https://data.cityofnewyork.us/resource/tg4x-b46p.json)
+JSON Data Snippet: https://data.cityofnewyork.us/resource/tg4x-b46p.json
 ```
 [
     {
@@ -36,10 +36,10 @@ JSON Data Snippet: [I'm an inline-style link] (https://data.cityofnewyork.us/res
 Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
 
 Desktop View `Wireframe` (via whimsical.com):
-[I'm an inline-style link] (https://whimsical.com/QuupJuv7BxbETHKvdrdbqv)
+https://whimsical.com/QuupJuv7BxbETHKvdrdbqv
 
 Mobile View `Wireframe` (via whimsical.com):
-[I'm an inline-style link] (https://whimsical.com/Y7KC2D93vuwE4Va4eUaQ5L)
+https://whimsical.com/Y7KC2D93vuwE4Va4eUaQ5L
 
 #### MVP 
 
@@ -74,7 +74,7 @@ The following schedule is used to track the development process of the web app, 
 
 `Time and Importance` Matrix (via docdroid):
 
-[I'm an inline-style link] (https://docdro.id/Q4s1toO) 
+https://docdro.id/Q4s1toO
 
 
 ## Timeframes
