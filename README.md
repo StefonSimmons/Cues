@@ -86,11 +86,14 @@ Timeframes for the development of Cues.
 | Borough Cards | M | 3hrs| - | - |
 | Nav Bar | L | 2hrs| - | - |
 | Hamburger Menu | L | 2hrs | - | - |
-| About and Contact Content | L | 1hr | - | - |
-| Flip Card Functionality | H | 5.5hrs | - | - |
+| About and Contact Content | L | 2hr | - | - |
+| Flip Card Functionality | H | 6hrs | - | - |
 | Quick Look Cards | H | 6hrs | - | - |
 | Further Stylize Site | L | 2hrs | - | - |
-| Total | H | 21.5hrs| - | - |
+| Filter API data through Boroughs (JS work) | H | 5hrs | - | - |
+| Working with API | H | 4hrs | - | - |
+| Debug | H | 4hrs | - | - |
+| Total | H | 36hrs| - | - |
 
 ## Code Snippet
 
