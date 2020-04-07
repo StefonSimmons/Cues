@@ -55,15 +55,18 @@ async function showPermits(activeCard){
     
     const APP_TOKEN = "&$$app_token=ochrLWXPVMqZqCBPzpkjlhzZI"
     const DOMAIN = `https://data.cityofnewyork.us/resource/tg4x-b46p.json?`;
-    const URL = `${DOMAIN}borough=${activeCard}${APP_TOKEN}`
+    let URL = `${DOMAIN}borough=${activeCard}${APP_TOKEN}`
 
     let results = await axios.get(URL)
     const permitData = results.data
     // console.log(permitData) // printing an array of specific borough/card data for every card 
 
     permitData.forEach(boroughPermits=> {
-      console.log(boroughPermits) //prints each element from the list
-      // const films = document.querySelector("")
+      // console.log(boroughPermits) //prints each element from the list
+      const films = boroughPermits.category = "Film"
+      films
+      const manhattanFilms = document.querySelector(`.${activeCard}-Film`)
+      manhattanFilms.innerHTML = films.length
     })
   
 
