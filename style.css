@@ -1,3 +1,8 @@
+/* *{
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+} */
 
 /* NAV BAR */
 header{
@@ -40,6 +45,18 @@ main{
 .borough-card{
   margin: 15px;
 }
+.card-back{
+  height: 210px;
+  display: block;
+  padding: 5px;
+  background-color: #DAE2DF
+}
+h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px
+}
+
+
 /* MAIN AREA - HOME */
 
 
@@ -87,8 +104,9 @@ h2{
 }
 /* MAIN AREA - ABOUT , CONTACT*/
 
+
 /* FOOTER */
-footer{
+/* footer{
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -102,7 +120,7 @@ h6{
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 16px;
   color: #DAE2DF;
-}
+} */
 /* FOOTER */
 
 
@@ -126,6 +144,5 @@ h6{
 /* BOROUGH CARDS */
 }
 
-@media(max-width)
 
 /* MEDIA QUERY */

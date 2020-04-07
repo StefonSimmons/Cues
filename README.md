@@ -83,7 +83,7 @@ Timeframes for the development of Cues.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Borough Cards | M | 3hrs| 2hr | - |
+| Borough Cards | M | 3hrs| 2hrs | 2hrs |
 | Nav Bar | L | 2hrs| 2hrs | 2hrs |
 | Hamburger Menu | L | 2hrs | 5hrs | 5hrs |
 | About and Contact Content | L | 2hrs | 2hrs | 2hrs |
