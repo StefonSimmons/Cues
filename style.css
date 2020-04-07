@@ -3,7 +3,7 @@
 header{
   display: flex;
   justify-content: space-between;
-  margin: 15px 0;
+  margin: 0 0 15px 0;
   background-color: #DAE2DF;
   border-bottom: solid 3px rgb(150, 144, 146);
 }
@@ -68,7 +68,8 @@ h1{
 }
 p{
   font-size: 18px;
-  padding: 5px 25px
+  padding: 5px 25px;
+  line-height: 1.7;
 }
 .tech{
   padding: 30px 0 10px 0;
@@ -84,8 +85,27 @@ h2{
 .email, .developer{
   margin: 30px 0 10px 0
 }
-
 /* MAIN AREA - ABOUT , CONTACT*/
+
+
+/* FOOTER */
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.bottom{
+  bottom: 0px;
+  background-color: rgb(10, 12, 20);
+  padding: 21.5px 25px; 
+}
+h6{
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 16px;
+  color: #DAE2DF;
+}
+/* FOOTER */
 
 
 /* MEDIA QUERY */
@@ -98,9 +118,15 @@ h2{
     display: flex;
     background-color: rgb(150, 144, 146);
     font-size: 24px;
-    padding: 17px 18px 17px 27px;
+    padding: 17px 27px 17px 27px;
   }
 /* Hamburger Menu */
+/* BOROUGH CARDS */
+  img{
+    width: 100%
+  }
+/* BOROUGH CARDS */
+  
 }
 
 
