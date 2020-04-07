@@ -23,3 +23,23 @@ function showNav() {
   })
 }
 //HAMBURGER MENU//
+
+// GET API //
+// const KEY = `?${KEY}=`;
+// const VALUE = `${Value}`
+
+const quickLook = document.querySelector(".card-front").addEventListener("click", showPermits)
+
+async function showPermits(){
+  try {
+    const APP_TOKEN = "$$app_token=ochrLWXPVMqZqCBPzpkjlhzZI"
+    const DOMAIN = `https://data.cityofnewyork.us/resource/tg4x-b46p.json?${APP_TOKEN}`;
+
+    let results = await axios.get(DOMAIN)
+    const permitData = results.data
+    console.log(permitData)
+  
+  } catch (error){
+      console.log(`Oops! There was an error: ${error}`)
+  }
+}
