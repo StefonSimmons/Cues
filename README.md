@@ -64,7 +64,7 @@ The following schedule is used to track the development process of the web app, 
 |---|---| ---|
 |April 3rd| Project Prompt | Complete
 |April 4th - 5th| Wireframes / Define MVP / Priority Matrix / Define Functional Components | Complete
-|April 6th| Project Approval / Begin Core Application Structure (HTML and CSS layout) | Incomplete
+|April 6th| Project Approval / Begin Core Application Structure (HTML and CSS layout) | Complete
 |April 7th| Complete core app layout for "home", "about" and "contact" pages / Begin Javascript(JS) development (GET API, "click" Event Listeners working | Incomplete
 |April 8th| Complete JS dev. (quick look card). Complete the Date Range filter | Incomplete
 |April 9th| Test functionality and design with another other user / Stylize (CSS) further | Incomplete
@@ -83,17 +83,17 @@ Timeframes for the development of Cues.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Borough Cards | M | 3hrs| - | - |
-| Nav Bar | L | 2hrs| - | - |
-| Hamburger Menu | L | 2hrs | - | - |
-| About and Contact Content | L | 2hr | - | - |
+| Borough Cards | M | 3hrs| 2hr | - |
+| Nav Bar | L | 2hrs| 2hrs | 2hrs |
+| Hamburger Menu | L | 2hrs | 5hrs | 5hrs |
+| About and Contact Content | L | 2hrs | 2hrs | 2hrs |
 | Flip Card Functionality | H | 6hrs | - | - |
 | Quick Look Cards | H | 6hrs | - | - |
-| Further Stylize Site | L | 2hrs | - | - |
+| Further Stylize Site | L | 2hrs | 1hrs | - |
 | Filter API data through Boroughs (JS work) | H | 5hrs | - | - |
 | Working with API | H | 4hrs | - | - |
 | Debug | H | 4hrs | - | - |
-| Total | H | 36hrs| - | - |
+| Total | H | 36hrs| 12hrs | - |
 
 ## Code Snippet
 
