@@ -43,13 +43,49 @@ main{
 /* MAIN AREA - HOME */
 
 
-/* MAIN AREA - ABOUT */
-.about-page{
-  background-color: rgb(200, 188, 188);
+/* MAIN AREA - ABOUT, CONTACT */
+.page{
   width: 90%;
+  background-color: rgb(235, 235, 235);
+  border: solid 3px #DAE2DF;
+  border-radius: 10px;
+  padding: 0 18px 18px 18px;
+  margin: 5px
 }
-.about{}
-/* MAIN AREA - ABOUT */
+.center{
+  text-align: center;
+}
+.about, .tech{
+  margin: 10px
+}
+h2, p{
+  font-family: 'Montserrat', sans-serif;
+}
+h1{
+  font-size: 26px;
+  font-weight: 700;
+  margin: 20px 0 10px 0
+}
+p{
+  font-size: 18px;
+  padding: 5px 25px
+}
+.tech{
+  padding: 30px 0 10px 0;
+}
+.about{
+  padding: 5px 0 0 0;
+}
+h2{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+.email, .developer{
+  margin: 30px 0 10px 0
+}
+
+/* MAIN AREA - ABOUT , CONTACT*/
 
 
 /* MEDIA QUERY */
