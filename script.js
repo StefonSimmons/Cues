@@ -26,18 +26,24 @@ function showNav() {
 
 // GET API //
 
-const card = document.querySelector("card-front")
-const cardView = card.addEventListener("click", showPermits) 
-  
+const card = document.querySelectorAll(".card-img")
+
+card.forEach(c => {
+  console.log(c.getAttribute("value"))
+  const activeCard = c.addEventListener("click", getCardValue) 
+})
+
+function getCardValue(e) {
+  console.log(e.target.getAttribute("value")) 
+}
+
 async function showPermits(){
   try {
     // format: domain
-    const activeBorough = cardView.value
-    console.log(activeBorough)
-    const KEY = 
-    const APP_TOKEN = "$$app_token=ochrLWXPVMqZqCBPzpkjlhzZI"
+    // const KEY = 
+    const APP_TOKEN = "&$$app_token=ochrLWXPVMqZqCBPzpkjlhzZI"
     const DOMAIN = `https://data.cityofnewyork.us/resource/tg4x-b46p.json?`;
-    const URL = `${DOMAIN}${activeBorough}=${APP_TOKEN}`
+    const URL = `${DOMAIN}borough=${activeCard}${APP_TOKEN}`
 
     let results = await axios.get(URL)
     const permitData = results.data
