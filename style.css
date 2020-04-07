@@ -35,7 +35,7 @@ main{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center
+  align-items: center;
 }
 .borough-card{
   margin: 15px;
@@ -87,7 +87,6 @@ h2{
 }
 /* MAIN AREA - ABOUT , CONTACT*/
 
-
 /* FOOTER */
 footer{
   position: fixed;
@@ -96,7 +95,6 @@ footer{
   text-align: center;
 }
 .bottom{
-  bottom: 0px;
   background-color: rgb(10, 12, 20);
   padding: 21.5px 25px; 
 }
@@ -126,8 +124,8 @@ h6{
     width: 100%
   }
 /* BOROUGH CARDS */
-  
 }
 
+@media(max-width)
 
 /* MEDIA QUERY */
