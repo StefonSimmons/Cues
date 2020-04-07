@@ -45,6 +45,7 @@ main{
 .borough-card{
   margin: 15px;
 }
+/* BACK OF CARD */
 .card-back{
   height: 210px;
   display: block;
@@ -53,9 +54,20 @@ main{
 }
 h3{
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px
+  font-size: 18px;
+  padding-bottom: 2px
 }
-
+h4{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  padding-bottom: 12px
+}
+.qldetails{
+  display: block; /* different than the nav list */
+  padding: 8px; 
+  font-size: 12px;
+}
+/* BACK OF CARD */
 
 /* MAIN AREA - HOME */
 
@@ -126,7 +138,7 @@ h6{
 
 /* MEDIA QUERY */
 /* Hamburger Menu */
-@media (max-width: 700px) {
+@media (max-width: 861px) {
   .menu{
     display: none;  
   }

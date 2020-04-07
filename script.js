@@ -25,17 +25,21 @@ function showNav() {
 //HAMBURGER MENU//
 
 // GET API //
-// const KEY = `?${KEY}=`;
-// const VALUE = `${Value}`
 
-const quickLook = document.querySelector(".card-front").addEventListener("click", showPermits)
-
+const card = document.querySelector("card-front")
+const cardView = card.addEventListener("click", showPermits) 
+  
 async function showPermits(){
   try {
+    // format: domain
+    const activeBorough = cardView.value
+    console.log(activeBorough)
+    const KEY = 
     const APP_TOKEN = "$$app_token=ochrLWXPVMqZqCBPzpkjlhzZI"
-    const DOMAIN = `https://data.cityofnewyork.us/resource/tg4x-b46p.json?${APP_TOKEN}`;
+    const DOMAIN = `https://data.cityofnewyork.us/resource/tg4x-b46p.json?`;
+    const URL = `${DOMAIN}${activeBorough}=${APP_TOKEN}`
 
-    let results = await axios.get(DOMAIN)
+    let results = await axios.get(URL)
     const permitData = results.data
     console.log(permitData)
   
