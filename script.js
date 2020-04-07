@@ -24,7 +24,8 @@ function showNav() {
 }
 //HAMBURGER MENU//
 
-// GET API //
+
+// GET API & QUICK LOOK DOM MANIPULATION//
 
 const cardImg = document.querySelectorAll(".card-img")
 
@@ -33,11 +34,21 @@ cardImg.forEach(c => {
   const activeCard = c.addEventListener("click", getCardValue) 
 })
 
+// const list1 = [[2, 3, 5, 6], [3, 6, 7, 8, 9], [1, 8, 7, 8]]
+
+// list1.forEach(e1 => {
+//   // console.log(e1)
+//   e1.forEach(e2 => {
+//     console.log (e2)
+//   })
+// })
+
 function getCardValue(e) {
-  cardValue = e.target.getAttribute("value")
-  console.log(cardValue) //printing cardvalue
+  cardValue = e.target.getAttribute("value") // e.target represents the clicked element
+  console.log(cardValue) //printing cardvalue for every clicked borough
   showPermits(cardValue)
 }
+
 
 async function showPermits(activeCard){
   try {
@@ -48,8 +59,14 @@ async function showPermits(activeCard){
 
     let results = await axios.get(URL)
     const permitData = results.data
-    console.log(permitData)
+    // console.log(permitData) // printing an array of specific borough/card data for every card 
+
+    permitData.forEach(boroughPermits=> {
+      console.log(boroughPermits) //prints each element from the list
+      // const films = document.querySelector("")
+    })
   
+
   } catch (error){
       console.log(`Oops! There was an error: ${error}`)
   }
