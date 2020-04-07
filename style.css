@@ -3,16 +3,18 @@
 header{
   display: flex;
   justify-content: space-between;
+  margin: 15px 0;
   background-color: #DAE2DF;
+  border-bottom: solid 3px rgb(150, 144, 146);
 }
 .logo{
   width: 150px;
-  height: 55px;
+  height: 50px;
   margin: 5px 0 0 5px
 }
 li{
   display: inline-block;
-  padding: 22px 25px;
+  padding: 21.5px 25px;
   font-family: 'Merriweather Sans', sans-serif;
 }
 .menu:hover{
@@ -25,12 +27,33 @@ a{
 #hamburger{
   display: none;
 }
-
-
 /* NAV BAR */
 
-/* Hamburger Menu */
 
+/* MAIN AREA - HOME */
+main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center
+}
+.borough-card{
+  margin: 15px;
+}
+/* MAIN AREA - HOME */
+
+
+/* MAIN AREA - ABOUT */
+.about-page{
+  background-color: rgb(200, 188, 188);
+  width: 90%;
+}
+.about{}
+/* MAIN AREA - ABOUT */
+
+
+/* MEDIA QUERY */
+/* Hamburger Menu */
 @media (max-width: 700px) {
   .menu{
     display: none;  
@@ -41,4 +64,8 @@ a{
     font-size: 24px;
     padding: 17px 18px 17px 27px;
   }
+/* Hamburger Menu */
 }
+
+
+/* MEDIA QUERY */
