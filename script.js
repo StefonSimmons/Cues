@@ -26,21 +26,22 @@ function showNav() {
 
 // GET API //
 
-const card = document.querySelectorAll(".card-img")
+const cardImg = document.querySelectorAll(".card-img")
 
-card.forEach(c => {
-  console.log(c.getAttribute("value"))
+cardImg.forEach(c => {
+  console.log(c.getAttribute("value")) //printing all card values
   const activeCard = c.addEventListener("click", getCardValue) 
 })
 
 function getCardValue(e) {
-  console.log(e.target.getAttribute("value")) 
+  cardValue = e.target.getAttribute("value")
+  console.log(cardValue) //printing cardvalue
+  showPermits(cardValue)
 }
 
-async function showPermits(){
+async function showPermits(activeCard){
   try {
-    // format: domain
-    // const KEY = 
+    
     const APP_TOKEN = "&$$app_token=ochrLWXPVMqZqCBPzpkjlhzZI"
     const DOMAIN = `https://data.cityofnewyork.us/resource/tg4x-b46p.json?`;
     const URL = `${DOMAIN}borough=${activeCard}${APP_TOKEN}`
