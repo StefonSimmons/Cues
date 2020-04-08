@@ -65,8 +65,8 @@ The following schedule is used to track the development process of the web app, 
 |April 3rd| Project Prompt | Complete
 |April 4th - 5th| Wireframes / Define MVP / Priority Matrix / Define Functional Components | Complete
 |April 6th| Project Approval / Begin Core Application Structure (HTML and CSS layout) | Complete
-|April 7th| Complete core app layout for "home", "about" and "contact" pages / Begin Javascript(JS) development (GET API, "click" Event Listeners working | Incomplete
-|April 8th| Complete JS dev. (quick look card). Complete the Date Range filter | Incomplete
+|April 7th| Complete core app layout for "home", "about" and "contact" pages / Begin Javascript(JS) development (GET API, "click" Event Listeners working | Complete
+|April 8th| Complete JS dev. (quick look card). Complete the Date Range filter | Complete
 |April 9th| Test functionality and design with another other user / Stylize (CSS) further | Incomplete
 |April 10th| Present hosted website | Incomplete
 
@@ -89,11 +89,11 @@ Timeframes for the development of Cues.
 | About and Contact Content | L | 2hrs | 2hrs | 2hrs |
 | Flip Card Functionality | H | 6hrs | - | - |
 | Quick Look Cards | H | 6hrs | 3hrs | 3hrs |
-| Further Stylize Site | L | 2hrs | 2hrs | - |
-| Filter API data through Boroughs (JS work) | H | 5hrs | 5hrs | - |
+| Further Stylize Site | L | 2hrs | 3hrs | - |
+| Filter API data through Boroughs (JS work) | H | 5hrs | 8hrs | 8hrs |
 | Working with API | H | 4hrs | 4hr | 4hrs |
 | Debug | H | 4hrs | - | - |
-| Total | H | 36hrs| 25hrs | 18hrs |
+| Total | H | 36hrs| 29hrs | 26hrs |
 
 ## Code Snippet
 
