@@ -51,13 +51,41 @@ main{
   margin: 15px;
 }
 /* BACK OF CARD */
+/* BACK CARD FLIP */
+
+.flip-card-container{
+  background-color: transparent;
+  width: 401px;
+  height: 216px;
+  margin: 15px;
+  perspective: 1000px;
+}
+.borough-card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flip-card-container:hover .borough-card{
+  transform: rotateY(180deg);
+}
+.card-front, .card-back{ /*WATCH OUT BELOW (card-back)*/
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
 .card-back{
   height: 210px;
   display: block;
   padding: 5px;
   background-color: #DAE2DF;
   border: solid 2px rgb(150, 144, 146);
+  transform: rotateY(180deg)
 }
+/* BACK CARD FLIP */
 h3{
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
