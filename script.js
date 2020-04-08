@@ -59,18 +59,37 @@ async function showPermits(activeCard){
 
     let results = await axios.get(URL)
     const permitData = results.data
-    // console.log(permitData) // printing an array of specific borough/card data for every card 
+    console.log(permitData) // printing an array of specific borough/card data for every card 
 
-    permitData.forEach(boroughPermits=> {
-      // console.log(boroughPermits) //prints each element from the list
-      const films = boroughPermits.category = "Film"
-      films
-      const manhattanFilms = document.querySelector(`.${activeCard}-Film`)
-      manhattanFilms.innerHTML = films.length
-    })
-  
+    const film = permitData.filter(boroughPermits => boroughPermits.category === 'Film' ).length //play around with the === and == and = //
+    console.log(film)
+    const boroughFilms = document.querySelector(`.${activeCard}-Film`)
+    boroughFilms.innerHTML = film
+
+    const television = permitData.filter(boroughPermits => boroughPermits.category === 'Television' ).length //play around with the === and == and = //
+    console.log(television)
+    const boroughTV = document.querySelector(`.${activeCard}-Television`)
+    boroughTV.innerHTML = television
+
+    const theater = permitData.filter(boroughPermits => boroughPermits.category === 'Theater' ).length //play around with the === and == and = //
+    console.log(theater)
+    const boroughThea = document.querySelector(`.${activeCard}-Theater`)
+    boroughThea.innerHTML = theater
+
 
   } catch (error){
       console.log(`Oops! There was an error: ${error}`)
   }
 }
+
+
+//THIS DID NOT WORK. NEEDED TO GET THE COUNT OF VALUES OF A KEY. NOT THE just the VALUE// 
+ //   manhattanFilms.innerHTML = films
+    // permitData.forEach(boroughPermits=> {
+    //   // console.log(boroughPermits) //prints each element from the list
+    //   // const filmlist
+    //   const films = boroughPermits.category = "Film"
+    //   // console.log(films)
+    //   const manhattanFilms = document.querySelector(`.${activeCard}-Film`)
+    //   manhattanFilms.innerHTML = films
+    // })
