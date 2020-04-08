@@ -76,11 +76,25 @@ async function showPermits(activeCard){
     const boroughThea = document.querySelector(`.${activeCard}-Theater`)
     boroughThea.innerHTML = theater
 
+    const total = permitData.filter(boroughPermits => boroughPermits.category).length //play around with the === and == and = //
+    console.log(total)
+    const boroughTotal = document.querySelector(`.${activeCard}-total`)
+    boroughTotal.style.fontWeight = "700"
+    boroughTotal.innerHTML = total
+    
+    const other = total - (film + television + theater) //play around with the === and == and = //
+    console.log(other)
+    const boroughOther = document.querySelector(`.${activeCard}-other`)
+    boroughOther.innerHTML = other
+
+    console.log(film + television + theater)
+
 
   } catch (error){
       console.log(`Oops! There was an error: ${error}`)
   }
 }
+
 
 
 //THIS DID NOT WORK. NEEDED TO GET THE COUNT OF VALUES OF A KEY. NOT THE just the VALUE// 
