@@ -29,10 +29,12 @@ function showNav() {
 
 // FOR CARD FLIP ⬇//
 
-let boroughCard = document.querySelector('.borough-card');
-boroughCard.addEventListener( 'click', function() {
-  boroughCard.classList.toggle('flipped-card');
-});
+const boroughCard = document.querySelectorAll('.borough-card')
+boroughCard.forEach(b => {
+  let flippedCard = b.addEventListener('click', function() {
+    b.classList.toggle('flipped-card')
+  })
+})
 
 // FOR CARD FLIP ⬆//
 
