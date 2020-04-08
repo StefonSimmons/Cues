@@ -4,7 +4,7 @@
   box-sizing: border-box;
 } */
 
-/* NAV BAR */
+/* NAV BAR ⬇ */
 header{
   display: flex;
   justify-content: space-between;
@@ -32,16 +32,16 @@ a{
 #hamburger{
   display: none;
 }
-/* NAV BAR */
+/* NAV BAR ⬆ */
 
 
-/* MAIN AREA - HOME */
+/* MAIN AREA - HOME ⬇*/
 body{
   position: relative;
   min-height: 100vh;
 }
 main{
-  padding-bottom: 2.5rem;
+  padding-bottom: 5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -50,9 +50,8 @@ main{
 .borough-card{
   margin: 15px;
 }
-/* BACK OF CARD */
-/* BACK CARD FLIP */
-
+/* BACK OF CARD ⬇*/
+/* BACK CARD FLIP ⬇*/
 .flip-card-container{
   background-color: transparent;
   width: 401px;
@@ -70,7 +69,7 @@ main{
 .flip-card-container:hover .borough-card{
   transform: rotateY(180deg);
 }
-.card-front, .card-back{ /*WATCH OUT BELOW (card-back)*/
+.card-front, .card-back{ /*WATCH OUT BELOW (card-back also)*/
   position: absolute;
   width: 100%;
   height: 100%;
@@ -85,7 +84,8 @@ main{
   border: solid 2px rgb(150, 144, 146);
   transform: rotateY(180deg)
 }
-/* BACK CARD FLIP */
+/* BACK CARD FLIP ⬆*/
+
 h3{
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
@@ -140,12 +140,12 @@ table{
   border-radius: 5px;
   border: solid 2px rgb(150, 144, 146)
 }
+/* BACK OF CARD ⬆*/
 
-/* BACK OF CARD */
-/* MAIN AREA - HOME */
+/* MAIN AREA - HOME ⬆*/
 
 
-/* MAIN AREA - ABOUT, CONTACT */
+/* MAIN AREA - ABOUT, CONTACT ⬇*/
 .page{
   width: 90%;
   background-color: rgb(235, 235, 235);
@@ -187,10 +187,10 @@ h2{
 .email, .developer{
   padding: 10px 0;
 }
-/* MAIN AREA - ABOUT , CONTACT*/
+/* MAIN AREA - ABOUT, CONTACT ⬆*/
 
 
-/* FOOTER */
+/* FOOTER ⬇*/
 footer{
   position: absolute;
   bottom: 0px;
@@ -207,11 +207,11 @@ h6{
   font-size: 16px;
   color: #DAE2DF;
 }
-/* FOOTER */
+/* FOOTER ⬆*/
 
 
-/* MEDIA QUERY */
-/* Hamburger Menu */
+/* MEDIA QUERY ⬇*/
+/* Hamburger Menu ⬇*/
 @media (max-width: 861px) {
   .menu{
     display: none;  
@@ -222,13 +222,13 @@ h6{
     font-size: 24px;
     padding: 17px 27px 17px 27px;
   }
-/* Hamburger Menu */
-/* BOROUGH CARDS */
+/* Hamburger Menu ⬆*/
+/* BOROUGH CARDS ⬇*/
   img{
     width: 100%
   }
-/* BOROUGH CARDS */
+/* BOROUGH CARDS ⬆*/
 }
 
 
-/* MEDIA QUERY */
+/* MEDIA QUERY ⬆*/
