@@ -45,20 +45,18 @@ const filterBtn = document.querySelector("#date")
 filterBtn.addEventListener("click", getDates)
 
 function getDates() {
-  let startDate = document.querySelector("#start-date").value
-  let endDate = document.querySelector("#end-date").value
-  dateArray = [startDate,endDate]
-  console.log(dateArray)
+  let startDateValue = document.querySelector("#start-date").value
+  let endDateValue = document.querySelector("#end-date").value
+  showPermits(startDateValue, endDateValue)
 }
 
 
-async function showPermits(activeCard){
+async function showPermits(startDate, endDate, activeCard= "Manhattan"){
   try {
     
-    const APP_TOKEN = "&$$app_token=ochrLWXPVMqZqCBPzpkjlhzZI"
-    // const START_DATE = 
-    const DOMAIN = `https://data.cityofnewyork.us/resource/tg4x-b46p.json?`;
-    let URL = `${DOMAIN}borough=${activeCard}${APP_TOKEN}`
+    const APP_TOKEN = "$$app_token=ochrLWXPVMqZqCBPzpkjlhzZI"
+    const DOMAIN = `https://data.cityofnewyork.us/resource/tg4x-b46p.json`;
+    let URL = `${DOMAIN}?borough=${activeCard}&$where=startdatetime between '${startDate}T00:00:00' and '${endDate}T00:00:00'&${APP_TOKEN}`
 
     let results = await axios.get(URL)
     const permitData = results.data
