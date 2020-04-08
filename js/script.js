@@ -29,10 +29,18 @@ function showNav() {
 
 // FOR CARD FLIP ⬇//
 
-const boroughCard = document.querySelectorAll('.borough-card')
+const boroughCard = document.querySelectorAll(".borough-card")
 boroughCard.forEach(b => {
-  let flippedCard = b.addEventListener('click', function() {
-    b.classList.toggle('flipped-card')
+  let flippedCard = b.addEventListener("click", function() {
+    b.classList.toggle("flipped-card")
+  })
+})
+
+// THIS IS SO I/USER CAN ENTER A DATE WITHOUT FLIPPING THE CARD AGAIN //
+const quickLookHeader = document.querySelectorAll(".qlheader")
+quickLookHeader.forEach(q => {
+  q.addEventListener("click", function (e) {
+    e.stopPropagation()
   })
 })
 
