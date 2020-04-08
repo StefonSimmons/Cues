@@ -34,6 +34,9 @@ cardImg.forEach(c => {
   let activeCard = c.addEventListener("click", getCardValue) 
 })
 
+// const input = document.querySelector("#start-date")
+// const startDateValue = input.getAttribute("value")
+// console.log(startDateValue)
 
 function getCardValue(e) {
   cardValue = e.target.getAttribute("value") // e.target represents the clicked element
@@ -42,10 +45,12 @@ function getCardValue(e) {
 }
 
 
+
 async function showPermits(activeCard){
   try {
     
     const APP_TOKEN = "&$$app_token=ochrLWXPVMqZqCBPzpkjlhzZI"
+    // const START_DATE = 
     const DOMAIN = `https://data.cityofnewyork.us/resource/tg4x-b46p.json?`;
     let URL = `${DOMAIN}borough=${activeCard}${APP_TOKEN}`
 

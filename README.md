@@ -88,12 +88,12 @@ Timeframes for the development of Cues.
 | Hamburger Menu | L | 2hrs | 5hrs | 5hrs |
 | About and Contact Content | L | 2hrs | 2hrs | 2hrs |
 | Flip Card Functionality | H | 6hrs | - | - |
-| Quick Look Cards | H | 6hrs | - | - |
-| Further Stylize Site | L | 2hrs | 1hrs | - |
-| Filter API data through Boroughs (JS work) | H | 5hrs | - | - |
-| Working with API | H | 4hrs | - | - |
+| Quick Look Cards | H | 6hrs | 3hrs | 3hrs |
+| Further Stylize Site | L | 2hrs | 2hrs | - |
+| Filter API data through Boroughs (JS work) | H | 5hrs | 5hrs | - |
+| Working with API | H | 4hrs | 4hr | 4hrs |
 | Debug | H | 4hrs | - | - |
-| Total | H | 36hrs| 12hrs | - |
+| Total | H | 36hrs| 25hrs | 18hrs |
 
 ## Code Snippet
 

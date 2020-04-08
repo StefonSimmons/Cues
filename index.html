@@ -37,16 +37,18 @@
               <tr>
                 <td><h3 class= "qlhead">Quick Look:</h3></td>          
                 <td>
-                  <label for="start-date"></label>
-                  <input type="date" name="start-date" id="start-date">
-                </td>
-                <td>
-                  <label for="end-date"></label>
-                  <input type="date" name="end-date" id="end-date">
+                  <form id = "date-form">
+                    <label for="start-date"></label>
+                    <input type="date" name="start-date" id="start-date">
+                    <label for="end-date"></label>
+                    <input type="date" name="end-date" id="end-date">
+                  </form>
                 </td>
               </tr>
               <tr>
                 <td><h4>Manhattan</h4></td>
+                <td></td>
+                <td><button type= "submit" form= "date-form">Filter</button></td>
               </tr>
             </table>
             <table class = "quick-look">
