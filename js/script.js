@@ -35,23 +35,23 @@ cardImg.forEach(c => {
 })
 
 function getCardValue(e) {
-  cardValue = e.target.getAttribute("value") // e.target represents the clicked element
-  console.log(cardValue) //printing cardvalue for every clicked borough
-  showPermits(cardValue)
+  activeCardValue = e.target.getAttribute("value") // e.target represents the clicked element
+  console.log(activeCardValue) //printing cardvalue for every clicked borough
+  getDates(activeCardValue)
 }
 
 
 const filterBtn = document.querySelector("#date")
 filterBtn.addEventListener("click", getDates)
 
-function getDates() {
+function getDates(activeCardValue) {
   let startDateValue = document.querySelector("#start-date").value
   let endDateValue = document.querySelector("#end-date").value
-  showPermits(startDateValue, endDateValue)
+  showPermits(startDateValue, endDateValue, activeCardValue)
 }
 
 
-async function showPermits(startDate, endDate, activeCard= "Manhattan"){
+async function showPermits(startDate, endDate, activeCard){
   try {
     
     const APP_TOKEN = "$$app_token=ochrLWXPVMqZqCBPzpkjlhzZI"
