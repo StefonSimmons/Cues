@@ -28,26 +28,38 @@ function showNav() {
 // GET API & QUICK LOOK DOM MANIPULATION//
 
 const cardImg = document.querySelectorAll(".card-img")
-
 cardImg.forEach(c => {
-  console.log(c.getAttribute("value")) //printing all card values
+  console.log(c.getAttribute("value")) //printing all card values before click event
   let activeCard = c.addEventListener("click", getCardValue) 
 })
 
 function getCardValue(e) {
-  activeCardValue = e.target.getAttribute("value") // e.target represents the clicked element
+  activeCardValue = e.target.getAttribute("value") // e.target represents the clicked element's value
   console.log(activeCardValue) //printing cardvalue for every clicked borough
   getDates(activeCardValue)
 }
-
-
-const filterBtn = document.querySelector("#date")
-filterBtn.addEventListener("click", getDates)
 
 function getDates(activeCardValue) {
   let startDateValue = document.querySelector("#start-date").value
   let endDateValue = document.querySelector("#end-date").value
   showPermits(startDateValue, endDateValue, activeCardValue)
+}
+
+const filterBtn = document.querySelector("#date")
+console.log(filterBtn.getAttribute("value")) //prints btn value ex-"Manhattan" before click event
+filterBtn.addEventListener("click", getFilteredCardValue)
+
+function getFilteredCardValue(e) {
+  filterBtnValue = e.target.getAttribute("value") // e.target represents the clicked element's value
+  console.log(filterBtnValue) //printing cardvalue for every clicked borough
+  filterDates(filterBtnValue)
+}
+
+function filterDates(filterBtnValue) {
+  console.log(filterBtnValue)
+  startDateValue = document.querySelector("#start-date").value
+  endDateValue = document.querySelector("#end-date").value
+  showPermits(startDateValue, endDateValue, filterBtnValue)
 }
 
 
@@ -65,28 +77,23 @@ async function showPermits(startDate, endDate, activeCard){
     activeCard = activeCard.replace(" ", "-") // for Staten Island
     
     const film = permitData.filter(boroughPermits => boroughPermits.category === 'Film' ).length //play around with the === and == and = //
-    console.log(film)
     const boroughFilms = document.querySelector(`.${activeCard}-Film`)
     boroughFilms.innerHTML = film
 
     const television = permitData.filter(boroughPermits => boroughPermits.category === 'Television' ).length //play around with the === and == and = //
-    console.log(television)
     const boroughTV = document.querySelector(`.${activeCard}-Television`)
     boroughTV.innerHTML = television
 
     const theater = permitData.filter(boroughPermits => boroughPermits.category === 'Theater' ).length //play around with the === and == and = //
-    console.log(theater)
     const boroughThea = document.querySelector(`.${activeCard}-Theater`)
     boroughThea.innerHTML = theater
 
     const total = permitData.filter(boroughPermits => boroughPermits.category).length //play around with the === and == and = //
-    console.log(total)
     const boroughTotal = document.querySelector(`.${activeCard}-total`)
     boroughTotal.style.fontWeight = "700"
     boroughTotal.innerHTML = total
     
     const other = total - (film + television + theater) //play around with the === and == and = //
-    console.log(other)
     const boroughOther = document.querySelector(`.${activeCard}-other`)
     boroughOther.innerHTML = other
 
