@@ -27,6 +27,15 @@ function showNav() {
 
 // GET API & 'QUICK LOOK' DOM MANIPULATION//
 
+// FOR CARD FLIP ⬇//
+
+let boroughCard = document.querySelector('.borough-card');
+boroughCard.addEventListener( 'click', function() {
+  boroughCard.classList.toggle('flipped-card');
+});
+
+// FOR CARD FLIP ⬆//
+
 const cardImg = document.querySelectorAll(".card-img")
 cardImg.forEach(c => {
   // console.log(c.getAttribute("value")) //printing all card values before click event
