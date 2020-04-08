@@ -53,13 +53,11 @@ main{
   background-color: #DAE2DF
 }
 h3{
-  display: inline;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   padding-bottom: 2px
 }
 h4{
-  display: inline;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   padding-bottom: 12px
@@ -79,6 +77,10 @@ h4{
 }
 table{
   width: 100%;
+}
+.datepicker{
+  width: 100px
+  
 }
 /* BACK OF CARD */
 /* MAIN AREA - HOME */

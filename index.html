@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <title>Cues - NYC Film TV and Theater Activity App</title>
   <link rel="shortcut icon" href="images/cue-icon.png">
 </head>
@@ -32,8 +33,22 @@
         </div>
         <div class = "card-back">
           <section>
-            <h3 class= "qlhead">Quick Look:</h3>
-            <h4>Manhattan</h4>
+            <table>
+              <tr>
+                <td><h3 class= "qlhead">Quick Look:</h3></td>          
+                <td>
+                  <label for="start-date"></label>
+                  <input type="date" name="start-date" id="start-date">
+                </td>
+                <td>
+                  <label for="end-date"></label>
+                  <input type="date" name="end-date" id="end-date">
+                </td>
+              </tr>
+              <tr>
+                <td><h4>Manhattan</h4></td>
+              </tr>
+            </table>
             <table class = "quick-look">
               <tr>
                 <td class = "qlcategories">Total Permited Productions:</td>
@@ -206,7 +221,7 @@
       <h6>&copy; Stefon Simmons</h6>
     </div>
   </footer>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="script.js" charset="utf-8"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script> 
+  <script src="./js/script.js" charset="utf-8"></script>
 </body>
 </html>
