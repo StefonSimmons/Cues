@@ -29,7 +29,7 @@ function showNav() {
 
 const cardImg = document.querySelectorAll(".card-img")
 cardImg.forEach(c => {
-  console.log(c.getAttribute("value")) //printing all card values before click event
+  // console.log(c.getAttribute("value")) //printing all card values before click event
   let activeCard = c.addEventListener("click", getCardValue) 
 })
 
@@ -70,7 +70,7 @@ async function showPermits(startDate, endDate, activeCard){
     
     const APP_TOKEN = "$$app_token=ochrLWXPVMqZqCBPzpkjlhzZI"
     const DOMAIN = `https://data.cityofnewyork.us/resource/tg4x-b46p.json`;
-    let URL = `${DOMAIN}?borough=${activeCard}&$where=startdatetime between '${startDate}T00:00:00' and '${endDate}T00:00:00'&${APP_TOKEN}`
+    let URL = `${DOMAIN}?borough=${activeCard.replace("-"," ")}&$where=startdatetime between '${startDate}T00:00:00' and '${endDate}T00:00:00'&${APP_TOKEN}`
 
     let results = await axios.get(URL)
     const permitData = results.data
