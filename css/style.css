@@ -50,7 +50,8 @@ main{
   height: 210px;
   display: block;
   padding: 5px;
-  background-color: #DAE2DF
+  background-color: #DAE2DF;
+  border: solid 2px rgb(150, 144, 146);
 }
 h3{
   font-family: 'Montserrat', sans-serif;
@@ -78,10 +79,28 @@ h4{
 table{
   width: 100%;
 }
-.datepicker{
-  width: 100px
-  
+#start-date, #end-date{
+  width: 85px;
+  padding: 3px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 5px;
+  border: solid 2px rgb(150, 144, 146);
 }
+#date{ 
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  border-radius: 5px;
+  border: solid 2px rgb(150, 144, 146)
+}
+#date-form{
+  text-align: right;
+}
+.btn-container{
+  text-align: center;
+}
+
 /* BACK OF CARD */
 /* MAIN AREA - HOME */
 
@@ -124,9 +143,6 @@ h2{
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
   font-weight: 500;
-}
-.email, .developer{
-  margin: 30px 0 10px 0
 }
 /* MAIN AREA - ABOUT , CONTACT*/
 

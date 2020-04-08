@@ -25,7 +25,7 @@ function showNav() {
 //HAMBURGER MENU// 
 
 
-// GET API & QUICK LOOK DOM MANIPULATION//
+// GET API & 'QUICK LOOK' DOM MANIPULATION//
 
 const cardImg = document.querySelectorAll(".card-img")
 cardImg.forEach(c => {
@@ -45,7 +45,7 @@ function getDates(activeCardValue) {
   showPermits(startDateValue, endDateValue, activeCardValue)
 }
 
-const filterBtn = document.querySelector("#date")
+const filterBtn = document.querySelector("#filter-btn")
 console.log(filterBtn.getAttribute("value")) //prints btn value ex-"Manhattan" before click event
 filterBtn.addEventListener("click", getFilteredCardValue)
 
