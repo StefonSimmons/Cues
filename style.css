@@ -59,16 +59,27 @@ h3{
 }
 h4{
   font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   padding-bottom: 12px
 }
-.qldetails{
+.qlcategories{
   display: block; /* different than the nav list */
+  font-family: 'Montserrat', sans-serif;
   padding: 8px; 
-  font-size: 12px;
+  font-size: 15px;
+}
+.count{
+  text-align: right;
+  padding-right: 30px;
+  font-family: 'Montserrat', sans-serif;
+  color: blue;
+  text-decoration: underline;
+  font-size: 15px;
+}
+table{
+  width: 100%;
 }
 /* BACK OF CARD */
-
 /* MAIN AREA - HOME */
 
 
