@@ -22,7 +22,7 @@ function showNav() {
     }
   })
 }
-//HAMBURGER MENU//
+//HAMBURGER MENU// 
 
 
 // GET API & QUICK LOOK DOM MANIPULATION//
@@ -34,16 +34,22 @@ cardImg.forEach(c => {
   let activeCard = c.addEventListener("click", getCardValue) 
 })
 
-// const input = document.querySelector("#start-date")
-// const startDateValue = input.getAttribute("value")
-// console.log(startDateValue)
-
 function getCardValue(e) {
   cardValue = e.target.getAttribute("value") // e.target represents the clicked element
   console.log(cardValue) //printing cardvalue for every clicked borough
   showPermits(cardValue)
 }
 
+
+const filterBtn = document.querySelector("#date")
+filterBtn.addEventListener("click", getDates)
+
+function getDates() {
+  let startDate = document.querySelector("#start-date").value
+  let endDate = document.querySelector("#end-date").value
+  dateArray = [startDate,endDate]
+  console.log(dateArray)
+}
 
 
 async function showPermits(activeCard){
@@ -92,14 +98,3 @@ async function showPermits(activeCard){
 }
 
 
-
-//THIS DID NOT WORK. NEEDED TO GET THE COUNT OF VALUES OF A KEY. NOT THE just the VALUE// 
- //   manhattanFilms.innerHTML = films
-    // permitData.forEach(boroughPermits=> {
-    //   // console.log(boroughPermits) //prints each element from the list
-    //   // const filmlist
-    //   const films = boroughPermits.category = "Film"
-    //   // console.log(films)
-    //   const manhattanFilms = document.querySelector(`.${activeCard}-Film`)
-    //   manhattanFilms.innerHTML = films
-    // })
