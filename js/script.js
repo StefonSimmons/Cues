@@ -40,14 +40,16 @@ function getCardValue(e) {
 }
 
 function getDates(activeCardValue) {
-  let startDateValue = document.querySelector("#start-date").value
-  let endDateValue = document.querySelector("#end-date").value
+  let startDateValue = document.querySelector(`#${activeCardValue.replace(" ", "-")}-start-date`).value
+  let endDateValue = document.querySelector(`#${activeCardValue.replace(" ", "-")}-end-date`).value
   showPermits(startDateValue, endDateValue, activeCardValue)
 }
 
-const filterBtn = document.querySelector("#filter-btn")
-console.log(filterBtn.getAttribute("value")) //prints btn value ex-"Manhattan" before click event
-filterBtn.addEventListener("click", getFilteredCardValue)
+const filterBtn = document.querySelectorAll(".filter-btn")
+filterBtn.forEach(f => {
+  console.log(f.getAttribute("value")) //prints btn value ex-"Manhattan" before click event
+  let factiveCard = f.addEventListener("click", getFilteredCardValue)  
+})
 
 function getFilteredCardValue(e) {
   filterBtnValue = e.target.getAttribute("value") // e.target represents the clicked element's value
@@ -57,8 +59,8 @@ function getFilteredCardValue(e) {
 
 function filterDates(filterBtnValue) {
   console.log(filterBtnValue)
-  startDateValue = document.querySelector("#start-date").value
-  endDateValue = document.querySelector("#end-date").value
+  startDateValue = document.querySelector(`#${filterBtnValue}-start-date`).value
+  endDateValue = document.querySelector(`#${filterBtnValue}-end-date`).value
   showPermits(startDateValue, endDateValue, filterBtnValue)
 }
 
