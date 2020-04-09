@@ -95,15 +95,30 @@ Timeframes for the development of Cues.
 | Debug | H | 4hrs | 7hrs | - |
 | Total | H | 36hrs| 43hrs | 30hrs |
 
-## Code Snippet
+## Code Snippet 
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description  
+A code snippet of functionalty that I'm proud of:
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+//THIS FLIPS THE CARD UPON A CLICK
+
+const boroughCard = document.querySelectorAll(".borough-card")
+boroughCard.forEach(b => {
+  let flippedCard = b.addEventListener("click", function() {
+    b.classList.toggle("flipped-card")
+  })
+})
+
+// THIS FUNCTION STOPS THE BUBBLING UP EFFECT ON THE SPECIFIC CHILD ELEMENT (class = qlheader) OF THE CARD WHEN THE PARENT/GRANDPARENT IS CLICKED. SO, PRACTICALLY, THIS ALLOWS THE USER TO ENTER A DATE WITHOUT CALLING THE FLIPPING EVENT ON THE CARD
+
+const quickLookHeader = document.querySelectorAll(".qlheader")
+quickLookHeader.forEach(q => {
+  q.addEventListener("click", function (e) {
+    e.stopPropagation()
+  })
+})
 ```
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
+ This section documents any changes made to the app that are not represented in the MVP or PMVP 
+  

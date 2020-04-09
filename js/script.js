@@ -5,16 +5,16 @@ const menu = document.querySelectorAll(".menu")
 
 
 hamburgerIcon.addEventListener("click",showNav)
-window.addEventListener("resize", setViewportWidth)
+// window.addEventListener("resize", setViewportWidth) // CALLS A FUNCTION TO SHOW NAV UPON RESIZING
 
 function setViewportWidth() {
   let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
   trackWidth(viewportWidth)
-  console.log(viewportWidth)
+  // console.log(viewportWidth)
 }
 
 function trackWidth(viewportWidth) {
-  console.log(viewportWidth)
+  // console.log(viewportWidth) //Printing viewport size live
   if (viewportWidth < 861) {
     hamburgerIcon.addEventListener("mouseover", showNav)
     hamburgerIcon.addEventListener("mouseout", showNav)
@@ -68,6 +68,7 @@ quickLookHeader.forEach(q => {
 
 // FOR CARD FLIP ⬆//
 
+
 const cardImg = document.querySelectorAll(".card-img")
 cardImg.forEach(c => {
   // console.log(c.getAttribute("value")) //printing all card values before click event
@@ -76,7 +77,7 @@ cardImg.forEach(c => {
 
 function getCardValue(e) {
   activeCardValue = e.target.getAttribute("value") // e.target represents the clicked element's value
-  console.log(activeCardValue) //printing cardvalue for every clicked borough
+  // console.log(activeCardValue) //printing cardvalue for every clicked borough
   getDates(activeCardValue)
 }
 
@@ -88,18 +89,17 @@ function getDates(activeCardValue) {
 
 const filterBtn = document.querySelectorAll(".filter-btn")
 filterBtn.forEach(f => {
-  console.log(f.getAttribute("value")) //prints btn value ex-"Manhattan" before click event
+  // console.log(f.getAttribute("value")) //prints btn value ex-"Manhattan" before click event
   let factiveCard = f.addEventListener("click", getFilteredCardValue)  
 })
 
 function getFilteredCardValue(e) {
   filterBtnValue = e.target.getAttribute("value") // e.target represents the clicked element's value
-  console.log(filterBtnValue) //printing cardvalue for every clicked borough
+  // console.log(filterBtnValue) //printing cardvalue for every clicked borough
   filterDates(filterBtnValue)
 }
 
 function filterDates(filterBtnValue) {
-  console.log(filterBtnValue)
   startDateValue = document.querySelector(`#${filterBtnValue}-start-date`).value
   endDateValue = document.querySelector(`#${filterBtnValue}-end-date`).value
   showPermits(startDateValue, endDateValue, filterBtnValue)
@@ -115,28 +115,28 @@ async function showPermits(startDate, endDate, activeCard){
 
     let results = await axios.get(URL)
     const permitData = results.data
-    console.log(permitData) // printing an array of specific borough/card data for every card 
+    // console.log(permitData) // printing an array of specific borough/card data for every card 
 
     activeCard = activeCard.replace(" ", "-") // for Staten Island
     
-    const film = permitData.filter(boroughPermits => boroughPermits.category === 'Film' ).length //play around with the === and == and = //
+    const film = permitData.filter(boroughPermits => boroughPermits.category === 'Film').length
     const boroughFilms = document.querySelector(`.${activeCard}-Film`)
     boroughFilms.innerHTML = film
 
-    const television = permitData.filter(boroughPermits => boroughPermits.category === 'Television' ).length //play around with the === and == and = //
+    const television = permitData.filter(boroughPermits => boroughPermits.category === 'Television' ).length 
     const boroughTV = document.querySelector(`.${activeCard}-Television`)
     boroughTV.innerHTML = television
 
-    const theater = permitData.filter(boroughPermits => boroughPermits.category === 'Theater' ).length //play around with the === and == and = //
+    const theater = permitData.filter(boroughPermits => boroughPermits.category === 'Theater' ).length 
     const boroughThea = document.querySelector(`.${activeCard}-Theater`)
     boroughThea.innerHTML = theater
 
-    const total = permitData.filter(boroughPermits => boroughPermits.category).length //play around with the === and == and = //
+    const total = permitData.filter(boroughPermits => boroughPermits.category).length 
     const boroughTotal = document.querySelector(`.${activeCard}-total`)
     boroughTotal.style.fontWeight = "700"
     boroughTotal.innerHTML = total
     
-    const other = total - (film + television + theater) //play around with the === and == and = //
+    const other = total - (film + television + theater) 
     const boroughOther = document.querySelector(`.${activeCard}-other`)
     boroughOther.innerHTML = other
 
