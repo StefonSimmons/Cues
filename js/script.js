@@ -2,13 +2,30 @@
 
 const hamburgerIcon = document.querySelector("#hamburger")
 const menu = document.querySelectorAll(".menu")
-menu.forEach(link => {
-  link.addEventListener("mouseover", showNav)
-  link.addEventListener("mouseout", showNav)
-})
-hamburgerIcon.addEventListener("mouseover", showNav)
-hamburgerIcon.addEventListener("mouseout", showNav)
-// hamburgerIcon.addEventListener("click", showNav)
+
+
+hamburgerIcon.addEventListener("click",showNav)
+window.addEventListener("resize", setViewportWidth)
+
+function setViewportWidth() {
+  let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+  trackWidth(viewportWidth)
+  console.log(viewportWidth)
+}
+
+function trackWidth(viewportWidth) {
+  console.log(viewportWidth)
+  if (viewportWidth < 861) {
+    hamburgerIcon.addEventListener("mouseover", showNav)
+    hamburgerIcon.addEventListener("mouseout", showNav)
+    menu.forEach(link => {
+      link.addEventListener("mouseover", showNav)
+      link.addEventListener("mouseout", showNav)
+    })
+  } else {
+      false
+    }
+}
 
 function showNav() {
   const bars = document.querySelector(".fa-bars")
