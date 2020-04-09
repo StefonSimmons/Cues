@@ -1,35 +1,5 @@
-//HAMBURGER MENU//
+//HAMBURGER MENU ⬇//
 
-
-
-
-// may not use  ⬇//
-
-// window.addEventListener("resize", setViewportWidth) // ➡ CALLS A FUNCTION TO SHOW NAV UPON RESIZING
-function setViewportWidth() {
-  let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-  trackWidth(viewportWidth)
-  // console.log(viewportWidth)
-}
-function trackWidth(viewportWidth) {
-  // console.log(viewportWidth) //Printing viewport size live
-  if (viewportWidth < 861) {
-    console.log(viewportWidth > 861)
-    hamburgerIcon.addEventListener("mouseover", showNav)
-    hamburgerIcon.addEventListener("mouseout", showNav)
-    menu.forEach(link => {
-      link.addEventListener("mouseover", showNav)
-      link.addEventListener("mouseout", showNav)
-    })
-  } else {
-      false
-    }
-}
-// may not use  ⬆//
-
-  
-
-//DO NOT DELETE. ➡ COPY OF WORKING FUNCTION. GOING TO TRY TO CLICK ON THE MENU BUT THEN REMOVE MENU WHEN MOUSE OUT//
 const hamburgerIcon = document.querySelector("#hamburger")
 const menu = document.querySelectorAll(".menu")
   
@@ -46,20 +16,16 @@ function showNav() {
   navigation.forEach(link => {
     if (link.style.display === "") {
       link.style.display = "block"
-      link.style.padding = "20px"
     } else {
       link.style.display = ""
     }
   })
 }
 
-  
-//DO NOT DELETE. ➡ COPY OF WORKING FUNCTION. GOING TO TRY TO CLICK ON THE MENU BUT THEN REMOVE MENU WHEN MOUSE OUT//
-
-//HAMBURGER MENU// 
+//HAMBURGER MENU ⬆// 
 
 
-// GET API & 'QUICK LOOK' DOM MANIPULATION//
+// ⬇ GETting API & 'QUICK LOOK' DOM MANIPULATION ⬇//
 
 // FOR CARD FLIP ⬇//
 
@@ -123,7 +89,7 @@ async function showPermits(startDate, endDate, activeCard){
     
     const APP_TOKEN = "$$app_token=ochrLWXPVMqZqCBPzpkjlhzZI"
     const DOMAIN = `https://data.cityofnewyork.us/resource/tg4x-b46p.json`;
-    let URL = `${DOMAIN}?borough=${activeCard.replace("-"," ")}&$where=startdatetime between '${startDate}T00:00:00' and '${endDate}T00:00:00'&${APP_TOKEN}`
+    let URL = `${DOMAIN}?borough=${activeCard.replace("-"," ")}&$where=startdatetime between '${startDate}T00:00:00' and '${endDate}T00:00:00'&$limit=20000&${APP_TOKEN}`
 
     let results = await axios.get(URL)
     const permitData = results.data

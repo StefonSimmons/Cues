@@ -89,11 +89,11 @@ Timeframes for the development of Cues.
 | About and Contact Content | L | 2hrs | 2hrs | 2hrs |
 | Flip Card Functionality | H | 6hrs | 4hrs | 4hrs |
 | Quick Look Cards | H | 6hrs | 3hrs | 3hrs |
-| Further Stylize Site | L | 2hrs | 6hrs | - |
+| Further Stylize Site | L | 2hrs | 6hrs | 6hrs |
 | Filter API data through Boroughs (JS work) | H | 5hrs | 8hrs | 8hrs |
 | Working with API | H | 4hrs | 4hr | 4hrs |
-| Debug | H | 4hrs | 7hrs | - |
-| Total | H | 36hrs| 43hrs | 30hrs |
+| Debug | H | 4hrs | 8hrs | 8hrs |
+| Total | H | 36hrs| 44hrs | 44hrs |
 
 ## Code Snippet 
 
