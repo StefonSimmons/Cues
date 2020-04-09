@@ -24,13 +24,13 @@ a{
   text-decoration: none;
 }
 #index-l:hover{
-  color: rgb(209, 214, 139)
+  color: rgb(228, 236, 106)
 }
 #about-l:hover{
   color: rgb(125, 194, 108)
 }
 #contact-l:hover{
-  color: rgb(189, 116, 116) 
+  color: rgb(204, 95, 95) 
 }
 #hamburger{
   display: none;
@@ -76,6 +76,9 @@ main{
 .card-img:hover {
   animation: shake .5s;
   animation-iteration-count: 1;
+}
+.bold{
+  font-weight: 600;
 }
 /* ANIMATION command from: https://www.w3schools.com/howto/howto_css_shake_image.asp */
 @keyframes shake {
@@ -142,7 +145,7 @@ h4{
 .qlcategories{
   display: block; /* different than the nav list */
   font-family: 'Montserrat', sans-serif;
-  padding: 8px; 
+  padding: 7.5px; 
   font-size: 15px;
 }
 .count{
@@ -181,6 +184,24 @@ table{
 .qlheader{
   background-color: rgb(150, 144, 146);
   /* background-image: linear-gradient(#DAE2DF, rgb(150, 144, 146)); */
+}
+.quick-look{
+  height: 100%
+}
+.manhattan-quick-look:hover{
+  background-color: rgba(182,250,193,.4);
+}
+.queens-quick-look:hover{
+  background-color: rgba(234,129,117,.4); 
+}
+.brooklyn-quick-look:hover{
+  background-color: rgba(243,183,128,.4);
+}
+.bronx-quick-look:hover{
+  background-color: rgba(186,152,253,.4);
+}
+.staten-island-quick-look:hover{
+  background-color: rgba(255,245,141,.4);
 }
 /* BACK OF CARD ⬆*/
 
