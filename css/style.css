@@ -35,7 +35,6 @@ a{
 #hamburger{
   display: none;
 }
-
 /* NAV BAR ⬆ */
 
 
@@ -98,8 +97,8 @@ main{
 /* CARD FLIP ⬇*/
 .flip-card-container{
   background-color: transparent;
-  width: 401px;
-  height: 216px;
+  width: 405px;
+  height: 214px;
   margin: 15px;
   perspective: 1000px;
 }
@@ -284,7 +283,7 @@ h6{
     color: #DAE2DF;
     background-color: rgb(28,28,28);
     font-size: 24px;
-    padding: 17px 27px 17px 27px;
+    padding: 17px 40px 17px 40px;
     
   }
   #hamburger:hover{

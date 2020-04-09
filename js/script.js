@@ -1,14 +1,21 @@
 //HAMBURGER MENU//
 
-const hamburgerIcon = document.querySelector(".icon")
-hamburgerIcon.addEventListener("click", showNav)
+const hamburgerIcon = document.querySelector("#hamburger")
+const menu = document.querySelectorAll(".menu")
+menu.forEach(link => {
+  link.addEventListener("mouseover", showNav)
+  link.addEventListener("mouseout", showNav)
+})
+hamburgerIcon.addEventListener("mouseover", showNav)
+hamburgerIcon.addEventListener("mouseout", showNav)
+// hamburgerIcon.addEventListener("click", showNav)
 
 function showNav() {
   const bars = document.querySelector(".fa-bars")
   const hamburger = document.querySelector("#hamburger")
   let ul = document.querySelector('ul')
   let navigation = document.querySelectorAll("ul > li")
-
+  
   hamburger.style.justifyContent = "center"
   ul.style.textAlign = "right"
   navigation.forEach(link => {
