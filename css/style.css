@@ -8,7 +8,7 @@ header{
 }
 .logo{
   width: 150px;
-  /* height: 50px; */
+  height: 47.7px;
   margin: 5px 0 5px 5px
 }
 li{
@@ -17,14 +17,20 @@ li{
   font-family: 'Merriweather Sans', sans-serif;
 }
 .menu:hover{
-  background-color: rgb(205, 211, 209)
+  background-color: rgb(61, 61, 61)
 }
 a{
   color: #DAE2DF;
   text-decoration: none;
 }
-a:hover{
-  color: rgb(28,28,28)
+#index-l:hover{
+  color: rgb(209, 214, 139)
+}
+#about-l:hover{
+  color: rgb(125, 194, 108)
+}
+#contact-l:hover{
+  color: rgb(189, 116, 116) 
 }
 #hamburger{
   display: none;
@@ -37,6 +43,7 @@ a:hover{
 body{
   position: relative;
   min-height: 100vh;
+  background-color: #DAE2DF;
 }
 main{
   padding-bottom: 5rem;
@@ -260,7 +267,7 @@ h6{
     
   }
   #hamburger:hover{
-  background-color: rgb(150, 144, 146);
+  background-color: rgb(61, 61, 61);
   color: rgb(28,28,28)
   }
 /* Hamburger Menu ⬆*/
