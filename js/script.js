@@ -9,8 +9,6 @@ function showNav() {
   let ul = document.querySelector('ul')
   let navigation = document.querySelectorAll("ul > li")
 
-  bars.style.color = "rgb(10, 12, 20)"
-  hamburger.style.backgroundColor = "rgb(150, 144, 146)"
   hamburger.style.justifyContent = "center"
   ul.style.textAlign = "right"
   navigation.forEach(link => {
