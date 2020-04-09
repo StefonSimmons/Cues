@@ -101,7 +101,7 @@ main{
   height: 214px;
   margin: 15px;
   perspective: 1000px;
-}
+} 
 .borough-card{
   position: relative;
   width: 100%;
@@ -284,7 +284,6 @@ h6{
     background-color: rgb(28,28,28);
     font-size: 24px;
     padding: 17px 40px 17px 40px;
-    
   }
   #hamburger:hover{
   background-color: rgb(61, 61, 61);
@@ -297,6 +296,12 @@ h6{
   }
 /* BOROUGH CARDS ⬆*/
 }
+
+/* @media (min-width: 861px){
+  li{
+    display: inline-block;
+  }
+} */
 
 
 /* MEDIA QUERY ⬆*/

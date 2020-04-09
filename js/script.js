@@ -1,21 +1,20 @@
 //HAMBURGER MENU//
 
-const hamburgerIcon = document.querySelector("#hamburger")
-const menu = document.querySelectorAll(".menu")
 
 
-hamburgerIcon.addEventListener("click",showNav)
-// window.addEventListener("resize", setViewportWidth) // CALLS A FUNCTION TO SHOW NAV UPON RESIZING
 
+// may not use  ⬇//
+
+// window.addEventListener("resize", setViewportWidth) // ➡ CALLS A FUNCTION TO SHOW NAV UPON RESIZING
 function setViewportWidth() {
   let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
   trackWidth(viewportWidth)
   // console.log(viewportWidth)
 }
-
 function trackWidth(viewportWidth) {
   // console.log(viewportWidth) //Printing viewport size live
   if (viewportWidth < 861) {
+    console.log(viewportWidth > 861)
     hamburgerIcon.addEventListener("mouseover", showNav)
     hamburgerIcon.addEventListener("mouseout", showNav)
     menu.forEach(link => {
@@ -26,7 +25,16 @@ function trackWidth(viewportWidth) {
       false
     }
 }
+// may not use  ⬆//
 
+  
+
+//DO NOT DELETE. ➡ COPY OF WORKING FUNCTION. GOING TO TRY TO CLICK ON THE MENU BUT THEN REMOVE MENU WHEN MOUSE OUT//
+const hamburgerIcon = document.querySelector("#hamburger")
+const menu = document.querySelectorAll(".menu")
+  
+hamburgerIcon.addEventListener("click", showNav)
+  
 function showNav() {
   const bars = document.querySelector(".fa-bars")
   const hamburger = document.querySelector("#hamburger")
@@ -44,6 +52,10 @@ function showNav() {
     }
   })
 }
+
+  
+//DO NOT DELETE. ➡ COPY OF WORKING FUNCTION. GOING TO TRY TO CLICK ON THE MENU BUT THEN REMOVE MENU WHEN MOUSE OUT//
+
 //HAMBURGER MENU// 
 
 
@@ -53,7 +65,7 @@ function showNav() {
 
 const boroughCard = document.querySelectorAll(".borough-card")
 boroughCard.forEach(b => {
-  let flippedCard = b.addEventListener("click", function() {
+  let flippedCard = b.addEventListener("click", function () {
     b.classList.toggle("flipped-card")
   })
 })
@@ -144,5 +156,3 @@ async function showPermits(startDate, endDate, activeCard){
       console.log(`Oops! There was an error: ${error}`)
   }
 }
-
-
