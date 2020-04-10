@@ -68,7 +68,7 @@ The following schedule is used to track the development process of the web app, 
 |April 7th| Complete core app layout for "home", "about" and "contact" pages / Begin Javascript(JS) development (GET API, "click" Event Listeners working | Complete
 |April 8th| Complete JS dev. (quick look card). Complete the Date Range filter | Complete
 |April 9th| Test functionality and design with another user / Stylize (CSS) further | Complete
-|April 10th| Present hosted website | Incomplete
+|April 10th| Present hosted website | Complete
 
 ## Priority Matrix
 
