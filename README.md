@@ -5,6 +5,8 @@ NYC Film TV and Theater Activity App
 
 "Cues" allows you to get quick data regarding film, television, and theater production activity in New York City. Select a NYC borough and at the flip of a card, filter through date ranges and discover the most popular location and time of year for the dramatic arts' exclusive use of NYC properties. 
 
+Please see the deployed website here: https://pages.git.generalassemb.ly/StefonSimmons/Cues/
+
 ## SODA API and Data Set
 
 This web application utilizes a NYC OpenData Dataset for Film Permits via the Socrata Open Data API (SODA).
