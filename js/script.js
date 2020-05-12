@@ -6,7 +6,6 @@ const menu = document.querySelectorAll(".menu")
 hamburgerIcon.addEventListener("click", showNav)
   
 function showNav() {
-  const bars = document.querySelector(".fa-bars")
   const hamburger = document.querySelector("#hamburger")
   let ul = document.querySelector('ul')
   let navigation = document.querySelectorAll("ul > li")
@@ -25,7 +24,7 @@ function showNav() {
 //HAMBURGER MENU ⬆// 
 
 
-// ⬇ GETting API & 'QUICK LOOK' DOM MANIPULATION ⬇//
+// ⬇ Getting API & 'QUICK LOOK' DOM MANIPULATION ⬇//
 
 // FOR CARD FLIP ⬇//
 
@@ -93,7 +92,7 @@ async function showPermits(startDate, endDate, activeCard){
 
     let results = await axios.get(URL)
     const permitData = results.data
-    // console.log(permitData) // printing an array of specific borough/card data for every card 
+    console.log(permitData) // printing an array of specific borough/card data for every card 
 
     activeCard = activeCard.replace(" ", "-") // for Staten Island
     

@@ -1,7 +1,7 @@
 
 /* NAV BAR ⬇ */
 header{
-  display: flex;
+  display: flex; 
   justify-content: space-between;
   margin: 0 0 15px 0;
   background-color: rgb(28,28,28);
